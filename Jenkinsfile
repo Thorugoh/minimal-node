@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/Thorugoh/minimal-node.git'
+                git branch: 'main', url: 'https://github.com/Thorugoh/minimal-node.git'
             }
         }
 
